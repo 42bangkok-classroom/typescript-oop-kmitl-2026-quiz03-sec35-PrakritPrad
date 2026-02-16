@@ -6,6 +6,8 @@ export class Playstation extends Product {
   generation?: number;
   constructor(name: string, generation: number, price: number) {
     super(name)
+    this.generation = generation;
+    this.price = price
   }
   getProfile() {
     return `${this.name} (gen ${this.generation})`
