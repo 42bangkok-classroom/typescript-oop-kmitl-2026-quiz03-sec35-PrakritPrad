@@ -13,9 +13,6 @@ export class Product {
         this.price = price;
 
     }
-    getDiscountPrice() {
-        const discount = this.price * (percent / 100);
-        this.price = this.price - discount;
-    }
+    
 }
 
