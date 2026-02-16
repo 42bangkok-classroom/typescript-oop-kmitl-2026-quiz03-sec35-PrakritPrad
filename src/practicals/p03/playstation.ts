@@ -2,7 +2,7 @@ import { Product } from './product'
 
 export class Playstation extends Product {
   readonly name?: string;
-  price: number = 0;
+  protected price: number = 0;
   generation?: number;
   constructor(name: string, generation: number, price: number) {
     super(name)
