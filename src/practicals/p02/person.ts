@@ -2,7 +2,7 @@ export class Person {
     static COUNTRY : string = "Thailand";
     firstname?: string;
     lastname?: string;
-    age? :number;
+    private age? :number;
     getFullName() {
         console.log(`${this.firstname} ${this.lastname}`)
 
