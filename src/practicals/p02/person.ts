@@ -8,7 +8,10 @@ export class Person {
 
     }
     setAge(age : number ) {
-        this.age = age;
+        if(!isNaN(age)){
+
+            this.age = age;
+        }
 
     }
     getAge() {
