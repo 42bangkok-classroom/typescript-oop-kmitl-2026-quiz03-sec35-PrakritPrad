@@ -1,10 +1,14 @@
 export class Product {
     readonly name?: string;
-    protected price?: number = 0;
+    protected price: number = 0;
     static readonly DISCOUNT_PERCENT: number = 10;
     constructor(name: string,price? : number) {
+        if(price){
+            this.price = price
+        }else{
+            this.price = 0
+        }
         this.name = name;
-        this.price = price;
 
     }
     getPrice() {
@@ -14,6 +18,9 @@ export class Product {
         this.price = price;
 
     }
-    
+    getDiscountPrice() {
+        const discount = this.price * (Product.DISCOUNT_PERCENT / 100);
+        this.price = this.price - discount;
+    }
 }
 

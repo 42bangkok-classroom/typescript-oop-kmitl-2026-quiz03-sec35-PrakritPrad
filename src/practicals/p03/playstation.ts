@@ -10,7 +10,7 @@ export class Playstation extends Product {
     this.price = price
   }
   getProfile() {
-    return `${this.name} (gen ${this.generation})`
+    return `${this.name} (Gen ${this.generation})`
   }
   getPrice() {
     return this.price;
