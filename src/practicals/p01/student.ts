@@ -4,8 +4,6 @@ export class Student {
 
     printName(): void {
 
-        this.firstname = "john" ;
-        this.lastname ="Doe";
         console.log(`${this.firstname} ${this.lastname}`)
     }
 
