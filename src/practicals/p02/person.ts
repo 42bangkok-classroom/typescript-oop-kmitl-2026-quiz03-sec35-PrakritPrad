@@ -2,9 +2,9 @@ export class Person {
     static COUNTRY : string = "Thailand";
     firstname?: string;
     lastname?: string;
-    private age? :number;
+    private age :number = 25;
     getFullName() {
-        console.log(`${this.firstname} ${this.lastname}`)
+        return `${this.firstname} ${this.lastname}`;
 
     }
     setAge(age : number ) {
@@ -14,8 +14,8 @@ export class Person {
         }
 
     }
-    getAge() {
-        console.log(this.age);
+    getAge(): number {
+        return this.age;
     }
 
 }
