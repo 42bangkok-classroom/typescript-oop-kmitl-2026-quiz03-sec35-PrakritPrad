@@ -4,9 +4,9 @@ export class Student {
 
     printName(name : string,last : string): void {
 
-        if(name) {
-            console.log(`${name} ${last}`)
-        }
+        this.firstname = name ;
+        this.lastname =last;
+        console.log(`${this.firstname} ${this.lastname}`)
     }
 
 }
