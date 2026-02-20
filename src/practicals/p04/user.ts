@@ -8,14 +8,16 @@ export class User {
     }
     login(passwrod: string): boolean {
         if (this.password === passwrod) {
+            User.LOGIN_ATTEMPTS ++ ;
             return true
         }
         else {
+            User.LOGIN_ATTEMPTS ++ ;
             return false
         }
     }
     getLoginAttempts() {
-        return User.LOGIN_ATTEMPTS ++;
+        return User.LOGIN_ATTEMPTS ;
     }
 
 }
