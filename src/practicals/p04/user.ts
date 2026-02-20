@@ -7,17 +7,18 @@ export class User {
         this.password = password;
     }
     login(password: string): boolean {
+        User.LOGIN_ATTEMPTS ++
         if (this.password === password) {
-            User.LOGIN_ATTEMPTS ++ ;
+
             return true
         }
         else {
-            User.LOGIN_ATTEMPTS ++ ;
+ ;
             return false
         }
     }
     getLoginAttempts() {
-        return User.LOGIN_ATTEMPTS ;
+        return User.LOGIN_ATTEMPTS  ;
     }
 
 }
