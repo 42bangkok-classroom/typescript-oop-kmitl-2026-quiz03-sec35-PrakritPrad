@@ -6,8 +6,8 @@ export class User {
         this.username = username;
         this.password = password;
     }
-    login(passwrod: string): boolean {
-        if (this.password === passwrod) {
+    login(password: string): boolean {
+        if (this.password === password) {
             User.LOGIN_ATTEMPTS ++ ;
             return true
         }
