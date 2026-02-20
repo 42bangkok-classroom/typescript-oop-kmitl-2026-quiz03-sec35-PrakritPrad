@@ -1,7 +1,7 @@
 export class User {
     public username: string;
     private password: string;
-    static LOGIN_ATTEMPTS: number = 0 ;
+    private static LOGIN_ATTEMPTS: number = 0 ;
     constructor(username: string, password: string) {
         this.username = username;
         this.password = password;
