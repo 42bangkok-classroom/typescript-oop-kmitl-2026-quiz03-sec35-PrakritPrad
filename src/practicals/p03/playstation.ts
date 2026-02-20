@@ -20,7 +20,7 @@ export class Playstation extends Product {
   }
   getDiscountPrice() {
         const discount = this.price * (Product.DISCOUNT_PERCENT / 100);
-        this.price = this.price - discount;
+        return this.price = this.price - discount;
     }
 
 }
